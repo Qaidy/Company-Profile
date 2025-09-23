@@ -1,0 +1,254 @@
+.navbar {
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  padding: 0.8rem 1rem;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #fff !important;
+}
+
+.navbar .nav-link {
+  position: relative;
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+}
+
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffe082;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #ffe082 !important;
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler-icon {
+  filter: invert(1); 
+}
+
+/* section backgrounds (fix height issue) */
+.section-bg-light {
+  min-height: 100vh;       /* sebelumnya height */
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+.section-bg-gray {
+  min-height: 100vh;
+  background-color: #e9ecef;
+  padding: 60px 0;
+}
+.section-bg-dark {
+  min-height: 100vh;
+  background-color: #dee2e6;
+  padding: 60px 0;
+}
+
+/* HERO SECTION */
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef 100%);
+  padding: 60px 0;
+}
+
+#hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+#hero .btn {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 990px) {
+  #hero img {
+    margin-top: 50px;
+  }
+
+  #hero h1 {
+    margin-top: 20px;
+  }
+}
+
+/* about us section */
+#about {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+#about h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #212529;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* custom button */
+.btn-about {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-about:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.3);
+}
+
+/* our team section */
+.team-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba (0, 0, 0, 0.1);
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* services section */
+#services {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+#services .service-card {
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+#services .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+#services .icon i {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#services .service-card:hover .icon i {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+/* contact section */
+#contact {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#contact h2 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+#contact p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+#contact i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.btn-contact {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* responsive tweak for contact */
+@media (max-width: 768px) {
+  #contact .col-md-4,
+  #contact .col-md-8 {
+    text-align: center;
+  }
+
+  #contact form {
+    margin-top: 20px;
+  }
+}
+
+/* footer */
+#footer {
+  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  color: #fff;
+}
+
+#footer a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #ffe082;
+}
