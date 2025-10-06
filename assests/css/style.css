@@ -1,5 +1,6 @@
+/* Navbar */
 .navbar {
-  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  background: linear-gradient(90deg, #2563EB, #1E40AF);
   padding: 0.8rem 1rem;
   z-index: 1000;
 }
@@ -7,12 +8,12 @@
 .navbar-brand {
   font-weight: 700;
   font-size: 1.4rem;
-  color: #fff !important;
+  color: #FFFFFF !important;
 }
 
 .navbar .nav-link {
   position: relative;
-  color: #fff !important;
+  color: #E2E8F0 !important;
   font-weight: 500;
   transition: all 0.3s ease;
   padding: 5px 10px;
@@ -25,12 +26,12 @@
   bottom: -5px;
   width: 0%;
   height: 2px;
-  background-color: #ffe082;
+  background-color: #38BDF8;
   transition: width 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: #ffe082 !important;
+  color: #38BDF8 !important;
   font-weight: 600;
 }
 
@@ -42,42 +43,43 @@
   border: none;
 }
 .navbar-toggler-icon {
-  filter: invert(1); 
+  filter: invert(1);
 }
 
-/* section backgrounds (fix height issue) */
+/* Section backgrounds */
 .section-bg-light {
-  min-height: 100vh;       /* sebelumnya height */
-  background-color: #f8f9fa;
+  min-height: 100vh;
+  background-color: #F8FAFC;
   padding: 60px 0;
 }
 .section-bg-gray {
   min-height: 100vh;
-  background-color: #e9ecef;
+  background-color: #F1F5F9;
   padding: 60px 0;
 }
 .section-bg-dark {
   min-height: 100vh;
-  background-color: #dee2e6;
+  background-color: #0F172A;
+  color: #E2E8F0;
   padding: 60px 0;
 }
 
 /* HERO SECTION */
 #hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef 100%);
+  background: linear-gradient(135deg, #F8FAFC, #E0F2FE 100%);
   padding: 60px 0;
 }
 
 #hero h1 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #212529;
+  color: #0F172A;
 }
 
 #hero p {
   font-size: 1.2rem;
-  color: #555;
+  color: #475569;
   line-height: 1.6;
 }
 
@@ -86,62 +88,58 @@
   padding: 12px 30px;
   font-weight: 600;
   transition: all 0.3s ease;
+  background-color: #2563EB;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
 }
 
-@media (max-width: 990px) {
-  #hero img {
-    margin-top: 50px;
-  }
-
-  #hero h1 {
-    margin-top: 20px;
-  }
+#hero .btn:hover {
+  background-color: #1D4ED8;
+  box-shadow: 0 6px 18px rgba(37,99,235,0.4);
 }
 
-/* about us section */
+/* About Section */
 #about {
-  background: #f8f9fa;
-  color: #333;
+  background: #FFFFFF;
+  color: #0F172A;
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0d6efd;
+  color: #2563EB;
 }
 
 #about h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #212529;
+  color: #0F172A;
 }
 
 #about p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #555;
+  color: #475569;
 }
 
-/* custom button */
 .btn-about {
-  background-color: #0d6efd;
+  background-color: #2563EB;
   color: #fff;
   padding: 12px 30px;
   font-size: 1rem;
   font-weight: 600;
   border-radius: 50px;
   text-decoration: none;
-  transition: all;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-about:hover {
-  background-color: #0b5ed7;
+  background-color: #1D4ED8;
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(13, 110, 253, 0.3);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.3);
 }
 
-/* our team section */
+/* Team Section */
 .team-card {
   border: none;
   border-radius: 15px;
@@ -150,7 +148,7 @@
 
 .team-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba (0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .team-img {
@@ -161,9 +159,9 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* services section */
+/* Services Section */
 #services {
-  background: #f8f9fa;
+  background: #F8FAFC;
   padding: 60px 0;
 }
 
@@ -171,6 +169,7 @@
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 12px;
+  background-color: #FFFFFF;
 }
 
 #services .service-card:hover {
@@ -179,32 +178,29 @@
 }
 
 #services .icon i {
+  color: #2563EB;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #services .service-card:hover .icon i {
-  color: #0d6efd;
+  color: #38BDF8;
   transform: scale(1.2);
 }
 
-/* contact section */
+/* Contact Section */
 #contact {
-  background: #f8f9fa;
+  background: #F8FAFC;
   padding: 60px 20px;
 }
 
-a {
-  text-decoration: none;
-}
-
 #contact h2 {
-  color: #2c3e50;
+  color: #0F172A;
   font-weight: bold;
 }
 
 #contact p {
   font-size: 16px;
-  color: #6c757d;
+  color: #475569;
 }
 
 #contact i {
@@ -213,42 +209,32 @@ a {
 }
 
 .btn-contact {
-  background-color: #007bff;
+  background-color: #2563EB;
   color: white;
   padding: 10px 25px;
   border-radius: 30px;
   border: none;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
 }
 
 .btn-contact:hover {
-  background-color: #0056b3;
+  background-color: #1D4ED8;
   transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(37,99,235,0.4);
 }
 
-/* responsive tweak for contact */
-@media (max-width: 768px) {
-  #contact .col-md-4,
-  #contact .col-md-8 {
-    text-align: center;
-  }
-
-  #contact form {
-    margin-top: 20px;
-  }
-}
-
-/* footer */
+/* Footer */
 #footer {
-  background: linear-gradient(90deg, #0d6efd, #0dcaf0);
+  background: linear-gradient(90deg, #0F172A, #1E293B);
   color: #fff;
 }
 
 #footer a {
-  color: #fff;
+  color: #38BDF8;
   transition: color 0.3s ease;
 }
 
 #footer a:hover {
-  color: #ffe082;
+  color: #FFFFFF;
 }
