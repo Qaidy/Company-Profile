@@ -1,8 +1,9 @@
 /* Navbar */
 .navbar {
-  background: linear-gradient(90deg, #2563EB, #1E40AF);
+  background: linear-gradient(90deg, #9F86C0, #6C5B7B, #4B3F58);
   padding: 0.8rem 1rem;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .navbar-brand {
@@ -13,7 +14,7 @@
 
 .navbar .nav-link {
   position: relative;
-  color: #E2E8F0 !important;
+  color: #ECE8F3 !important;
   font-weight: 500;
   transition: all 0.3s ease;
   padding: 5px 10px;
@@ -26,12 +27,12 @@
   bottom: -5px;
   width: 0%;
   height: 2px;
-  background-color: #38BDF8;
+  background-color: #C9A7D6;
   transition: width 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: #38BDF8 !important;
+  color: #C9A7D6 !important;
   font-weight: 600;
 }
 
@@ -49,37 +50,37 @@
 /* Section backgrounds */
 .section-bg-light {
   min-height: 100vh;
-  background-color: #F8FAFC;
+  background-color: #FBF9FC;
   padding: 60px 0;
 }
 .section-bg-gray {
   min-height: 100vh;
-  background-color: #F1F5F9;
+  background-color: #F4F0F8;
   padding: 60px 0;
 }
 .section-bg-dark {
   min-height: 100vh;
-  background-color: #0F172A;
-  color: #E2E8F0;
+  background-color: #3D314A;
+  color: #EEE9F5;
   padding: 60px 0;
 }
 
 /* HERO SECTION */
 #hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, #F8FAFC, #E0F2FE 100%);
+  background: linear-gradient(135deg, #FBF9FC, #F4F0F8 100%);
   padding: 60px 0;
 }
 
 #hero h1 {
   font-size: 2.8rem;
   font-weight: 700;
-  color: #0F172A;
+  color: #2E2E2E;
 }
 
 #hero p {
   font-size: 1.2rem;
-  color: #475569;
+  color: #5E5E5E;
   line-height: 1.6;
 }
 
@@ -88,42 +89,42 @@
   padding: 12px 30px;
   font-weight: 600;
   transition: all 0.3s ease;
-  background-color: #2563EB;
+  background: linear-gradient(90deg, #9F86C0, #6C5B7B);
   color: #fff;
-  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+  box-shadow: 0 4px 12px rgba(108,91,123,0.3);
 }
 
 #hero .btn:hover {
-  background-color: #1D4ED8;
-  box-shadow: 0 6px 18px rgba(37,99,235,0.4);
+  background: linear-gradient(90deg, #8E7BBE, #5A4D68);
+  box-shadow: 0 6px 18px rgba(108,91,123,0.4);
 }
 
 /* About Section */
 #about {
   background: #FFFFFF;
-  color: #0F172A;
+  color: #2E2E2E;
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #2563EB;
+  color: #6C5B7B;
 }
 
 #about h3 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #0F172A;
+  color: #2E2E2E;
 }
 
 #about p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #475569;
+  color: #5E5E5E;
 }
 
 .btn-about {
-  background-color: #2563EB;
+  background: linear-gradient(90deg, #9F86C0, #6C5B7B);
   color: #fff;
   padding: 12px 30px;
   font-size: 1rem;
@@ -134,9 +135,9 @@
 }
 
 .btn-about:hover {
-  background-color: #1D4ED8;
+  background: linear-gradient(90deg, #8E7BBE, #5A4D68);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(37,99,235,0.3);
+  box-shadow: 0 6px 18px rgba(108,91,123,0.3);
 }
 
 /* Team Section */
@@ -161,7 +162,7 @@
 
 /* Services Section */
 #services {
-  background: #F8FAFC;
+  background: #FBF9FC;
   padding: 60px 0;
 }
 
@@ -178,60 +179,61 @@
 }
 
 #services .icon i {
-  color: #2563EB;
+  color: #6C5B7B;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 #services .service-card:hover .icon i {
-  color: #38BDF8;
+  color: #C9A7D6;
   transform: scale(1.2);
 }
 
 /* Contact Section */
 #contact {
-  background: #F8FAFC;
+  background: #FBF9FC;
   padding: 60px 20px;
 }
 
 #contact h2 {
-  color: #0F172A;
+  color: #2E2E2E;
   font-weight: bold;
 }
 
 #contact p {
   font-size: 16px;
-  color: #475569;
+  color: #5E5E5E;
 }
 
 #contact i {
   margin-right: 10px;
   font-size: 18px;
+  color: #9BBFA7;
 }
 
 .btn-contact {
-  background-color: #2563EB;
+  background: linear-gradient(90deg, #9F86C0, #6C5B7B);
   color: white;
   padding: 10px 25px;
   border-radius: 30px;
   border: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+  box-shadow: 0 4px 12px rgba(108,91,123,0.3);
 }
 
 .btn-contact:hover {
-  background-color: #1D4ED8;
+  background: linear-gradient(90deg, #8E7BBE, #5A4D68);
   transform: translateY(-3px);
-  box-shadow: 0 6px 18px rgba(37,99,235,0.4);
+  box-shadow: 0 6px 18px rgba(108,91,123,0.4);
 }
 
 /* Footer */
 #footer {
-  background: linear-gradient(90deg, #0F172A, #1E293B);
+  background: linear-gradient(90deg, #3D314A, #2A1E39);
   color: #fff;
 }
 
 #footer a {
-  color: #38BDF8;
+  color: #C9A7D6;
   transition: color 0.3s ease;
 }
 
